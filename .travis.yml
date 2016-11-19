@@ -3,6 +3,6 @@ python:
   - "3.4"
   - "3.5"
 # command to install dependencies
-#install: "pip3 install -r 'PI Requests/requirements.txt'"
+install: "pip install pytest"
 # command to run tests
 script: pytest
