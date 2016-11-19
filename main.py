@@ -29,6 +29,7 @@ def login():
         cmd = input("command> ")
         if cmd == "exit":
             client.close()
+        cmd.replace(r"'", r"'\''")
         stdin, stdout, stderr = client.exec_command(cmd)
         stdin.close()
         for line in stdout.read().splitlines():
